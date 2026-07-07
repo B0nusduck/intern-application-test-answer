@@ -1,0 +1,16 @@
+/** @type {import('next').NextConfig} */
+const nextConfig = {
+  /* config options here */
+  reactCompiler: true,
+  async redirects() {
+    return [
+      {
+        source: '/',
+        destination: '/home',
+        permanent: true, 
+      },
+    ];
+  },
+};
+
+export default nextConfig;
